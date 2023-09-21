@@ -1,0 +1,16 @@
+#include<stdio.h>
+
+/**
+    while(condition){
+        executable code
+    }
+*/
+
+void main(){
+    int i = 1; /// initlization
+
+    while(i <= 10){ /// condition
+        printf(" %d", i);
+        i += 2; /// increment / decrement
+    }
+}
