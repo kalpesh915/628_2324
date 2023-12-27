@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        div {
+            border: 3px solid #4CAF50;
+            padding: 5px;
+        }
+
+        .img1 {
+            float: right;
+        }
+
+        .img2 {
+            float: right;
+        }
+
+        .clearfix::after{
+            clear: both;
+            content: "";
+            display: table;
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <img class="img1" src="images/pineapple.jpg" alt="Pineapple" width="170" height="170">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus imperdiet...
+    </div>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. In at maiores quam cum placeat non, voluptatum, harum assumenda minus ipsa expedita odio, alias voluptas ipsum! Fuga veritatis eligendi nobis esse.</p>
+    <hr>
+    <p style="clear: both;"></p>
+    <div class="clearfix">
+        <img class="img1" src="images/pineapple.jpg" alt="Pineapple" width="170" height="170">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus imperdiet...
+    </div>
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vero, aliquid possimus. Ex enim commodi voluptatem libero vel iusto consequuntur nemo optio quas laboriosam eaque incidunt quos reiciendis odio, dolores possimus?</p>
+</body>
+
+</html>
