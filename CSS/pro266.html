@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        input[type="email"], input[type="password"]{
+            width: 20%;
+            display: block;
+            padding: 10px;
+            box-sizing: border-box;
+            margin: 5px 0px;
+            border: none;
+            outline: none;
+            border-bottom: 1px solid red;
+            background-color: #4caf50;        
+            color: white;
+            /* animation */
+            transition: all 5s;
+        }
+
+        input[type="email"]:focus, input[type="password"]:focus{
+            background-color: black;
+            color: white;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <form>
+        <input type="email" name="email" id="email">
+        <input type="password" name="upass" id="upass">
+        
+    </form>
+</body>
+</html>
