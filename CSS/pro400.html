@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        .tooltip{
+            position: relative;
+        }
+
+        .tooltip-text{
+            background-color: black;
+            color: white;
+            width: 250px;
+            text-align: center;
+            padding: 20px;
+            z-index: 1;
+            border-radius: 10px;
+            visibility: hidden;
+            position: absolute;
+        }
+
+        .tooltip:hover .tooltip-text{
+            visibility: visible;
+        }
+    </style>
+</head>
+<body>
+    <div class="tooltip">
+        Mouse Over Me
+        <div class="tooltip-text">Lorem ipsum dolor sit amet</div>
+    </div>
+</body>
+</html>
