@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        @media screen and (orientation:landscape) {
+            body{
+                background-color: olive;
+            }
+        }
+
+        @media screen and (orientation:portrait) {
+            body{
+                background-color: tan;
+            }
+        }
+    </style>
+</head>
+<body onresize="getWidth()">
+    <h1 id="op"></h1>
+    
+</body>
+</html>
+
+<script>
+    function getWidth(){
+        document.getElementById("op").innerHTML = window.innerWidth;
+    }
+</script>
