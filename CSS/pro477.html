@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+    
+        .col{
+            width: 25%;
+            padding: 10px;
+            text-align: justify;
+            float: left;
+        }
+
+        /* columns will be hide if screen size is less than 800px */
+        @media screen and (max-width:800px){
+            .col{
+                display: none;
+            }
+        }
+
+    </style>
+</head>
+<body onresize="getWidth()">
+    <h1 id="op"></h1>
+    <hr>
+
+    <div>
+        <div class="col">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eaque illo quasi officiis consequuntur voluptate at repellendus quod? Quidem culpa, ratione hic, iusto, quasi reiciendis assumenda laborum ullam aspernatur natus tempora?</div>
+        <div class="col">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eaque illo quasi officiis consequuntur voluptate at repellendus quod? Quidem culpa, ratione hic, iusto, quasi reiciendis assumenda laborum ullam aspernatur natus tempora?</div>
+        <div class="col">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eaque illo quasi officiis consequuntur voluptate at repellendus quod? Quidem culpa, ratione hic, iusto, quasi reiciendis assumenda laborum ullam aspernatur natus tempora?</div>
+        <div class="col">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eaque illo quasi officiis consequuntur voluptate at repellendus quod? Quidem culpa, ratione hic, iusto, quasi reiciendis assumenda laborum ullam aspernatur natus tempora?</div>
+        <div class="col">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eaque illo quasi officiis consequuntur voluptate at repellendus quod? Quidem culpa, ratione hic, iusto, quasi reiciendis assumenda laborum ullam aspernatur natus tempora?</div>
+        <div class="col">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eaque illo quasi officiis consequuntur voluptate at repellendus quod? Quidem culpa, ratione hic, iusto, quasi reiciendis assumenda laborum ullam aspernatur natus tempora?</div>
+        <div class="col">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eaque illo quasi officiis consequuntur voluptate at repellendus quod? Quidem culpa, ratione hic, iusto, quasi reiciendis assumenda laborum ullam aspernatur natus tempora?</div>
+        <div class="col">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eaque illo quasi officiis consequuntur voluptate at repellendus quod? Quidem culpa, ratione hic, iusto, quasi reiciendis assumenda laborum ullam aspernatur natus tempora?</div>
+        <div class="col">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eaque illo quasi officiis consequuntur voluptate at repellendus quod? Quidem culpa, ratione hic, iusto, quasi reiciendis assumenda laborum ullam aspernatur natus tempora?</div>
+        <div class="col">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eaque illo quasi officiis consequuntur voluptate at repellendus quod? Quidem culpa, ratione hic, iusto, quasi reiciendis assumenda laborum ullam aspernatur natus tempora?</div>
+        <div class="col">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eaque illo quasi officiis consequuntur voluptate at repellendus quod? Quidem culpa, ratione hic, iusto, quasi reiciendis assumenda laborum ullam aspernatur natus tempora?</div>
+    </div>
+</body>
+</html>
+
+<script>
+    function getWidth(){
+        document.getElementById("op").innerHTML = window.innerWidth;
+    }
+</script>

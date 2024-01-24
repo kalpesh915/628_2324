@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+
+        div{
+            background-color: black;
+            width: 100%;
+        }
+
+        div a{
+            color: white;
+            text-decoration: none;
+            padding: 10px;
+            display: inline-block;
+        }
+
+        div a:hover{
+            background-color: gray;
+        }
+
+        @media screen and (max-width:700px){
+            div a{
+                display: block;
+            }
+        }
+    </style>
+</head>
+<body onresize="getWidth()">
+    <h1 id="op"></h1>
+    <hr>
+
+    <div>
+        <a href="#">Link 1</a>
+        <a href="#">Link 2</a>
+        <a href="#">Link 3</a>
+        <a href="#">Link 4</a>
+        <a href="#">Link 5</a>
+    </div>
+</body>
+</html>
+
+<script>
+    function getWidth(){
+        document.getElementById("op").innerHTML = window.innerWidth;
+    }
+</script>

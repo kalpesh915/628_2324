@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            /* for all the scren size bockground color of body remains to tan */
+            background-color: tan;
+        }
+
+        /* change the background color to olive if screen size is more than 800px and less than 1200px, and less than 500px */
+        @media screen and (min-width:800px) and (max-width:1200px), (max-width:500px){
+            body{
+                background-color: olive;
+            }
+        }
+    </style>
+</head>
+<body onresize="getWidth()">
+    <h1 id="op"></h1>
+    <hr>
+
+    
+</body>
+</html>
+
+<script>
+    function getWidth(){
+        document.getElementById("op").innerHTML = window.innerWidth;
+    }
+</script>

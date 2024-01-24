@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color: tan;
+        }
+
+        @media screen and (max-width:1000px){
+            body{
+                background-color: blue;
+            }
+        }
+
+        @media screen and (max-width:700px){
+            body{
+                background-color: olive;
+            }
+        }
+
+        @media screen and (max-width:500px){
+            body{
+                background-color: orangered;
+            }
+        }
+    </style>
+</head>
+<body onresize="getWidth()">
+    <h1 id="op"></h1>
+    
+</body>
+</html>
+
+<script>
+    function getWidth(){
+        document.getElementById("op").innerHTML = window.innerWidth;
+    }
+</script>
