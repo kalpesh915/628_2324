@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* The z-index property specifies the stack order of an element. */
+
+        .container{
+            width: 1000px;
+            height: 600px;
+            border: 10px solid black;
+            position: relative;
+        }
+        .redBox{
+            height: 200px;
+            width: 300px;
+            background-color: red;
+            position: absolute;
+            left: 100px;
+            top: 100px;
+        }
+
+        .blueBox{
+            height: 300px;
+            width: 400px;
+            background-color: blue;
+            position: absolute;
+            left: 200px;
+            top: 250px;
+        }
+
+        .greenBox{
+            height: 400px;
+            width: 500px;
+            background-color: green;
+            position: absolute;
+            left: 300px;
+            top: 50px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="redBox"></div>
+        <div class="blueBox"></div>
+        <div class="greenBox"></div>
+    </div>
+</body>
+</html>
