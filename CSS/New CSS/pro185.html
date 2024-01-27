@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .header{
+            background-color: gray;
+            color: black;
+            text-align: center;
+            font-size: 30px;
+            padding: 20px;
+        }
+
+        .footer{
+            background-color: gray;
+            color: black;
+            text-align: center;
+            font-size: 20px;
+            padding: 20px;
+        }
+
+        .row::after{
+            clear: both;
+            content: " ";
+            display: table;
+        }
+
+        .menu{
+            width: 25%;
+            float: left;
+        }
+
+        .data{
+            float: left;
+            width: 75%;
+        }
+
+        .menu ul{
+            list-style-type: none;
+            padding: 0px;
+            margin: 0px;
+        }
+
+        .menu ul li a{
+            background-color: black;
+            color: white;
+            padding: 10px;
+            text-align: center;
+            display: inline-block;
+            margin: 5px 0px;
+            text-decoration: none;
+            width: 50%;
+        }
+
+        .menu  a:hover{
+            background-color: olive;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="header">
+        <h1>Welcome to our website</h1>
+    </div>
+
+    <div class="row">
+        <div class="menu">
+            <ul>
+                <li><a href="#">Link 1</a></li>
+                <li><a href="#">Link 2</a></li>
+                <li><a href="#">Link 3</a></li>
+                <li><a href="#">Link 4</a></li>
+                <li><a href="#">Link 5</a></li>
+            </ul>
+        </div>
+
+        <div class="data">
+            <h1>Welcome to Main Data</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis minima nulla quis ex voluptas ducimus dolores distinctio maiores ab, commodi quisquam, repellat mollitia harum! Et eligendi perspiciatis quisquam quam soluta.</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis minima nulla quis ex voluptas ducimus dolores distinctio maiores ab, commodi quisquam, repellat mollitia harum! Et eligendi perspiciatis quisquam quam soluta.</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis minima nulla quis ex voluptas ducimus dolores distinctio maiores ab, commodi quisquam, repellat mollitia harum! Et eligendi perspiciatis quisquam quam soluta.</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis minima nulla quis ex voluptas ducimus dolores distinctio maiores ab, commodi quisquam, repellat mollitia harum! Et eligendi perspiciatis quisquam quam soluta.</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis minima nulla quis ex voluptas ducimus dolores distinctio maiores ab, commodi quisquam, repellat mollitia harum! Et eligendi perspiciatis quisquam quam soluta.</p>
+        </div>
+    </div>
+
+    <div class="footer">
+        <h1>Developed by Qwerty</h1>
+    </div>
+</body>
+
+</html>
