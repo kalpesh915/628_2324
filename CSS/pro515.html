@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .flex-container {
+            display: flex;
+            background-color: dodgerblue;
+            padding: 10px;
+            flex-wrap: wrap;
+        }
+
+        .flex-item-1, .flex-item-2 {
+            background-color: #f1f1f1;
+            padding: 20px;
+            margin: 5px 0px;
+            font-size: 30px; 
+            box-sizing: border-box;
+            flex: 50%;
+            border: 1px solid black;
+        }
+
+        @media screen and (max-width:800px){
+            .flex-item-1, .flex-item-2{
+                flex: 100%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="flex-container">
+        <div class="flex-item-1">1</div>
+        <div class="flex-item-2">2</div>
+    </div>
+</body>
+
+</html>
