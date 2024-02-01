@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+
+        [class*="col-"]{
+            float: left;
+            padding: 10px;
+            width: 100%;
+            /* border: 1px solid black; */
+        }
+
+        .row::after{
+            clear: both;
+            display: table;
+            content: " ";
+        }
+
+        html{
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+
+        .header{
+            background-color: #999933;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+
+        .footer{
+            background-color: orangered;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+
+        .menu ul{
+            list-style-type: none;
+            padding: 0px;
+            margin: 0px;
+        }
+
+        .menu ul li{
+            display: block;
+            padding: 10px;
+            text-align: center;
+            background-color: powderblue;
+            color: black;
+            margin: 3px 0px;
+        }
+
+        .menu ul li:hover{
+            background-color: olive;
+            color: white;
+        }
+
+        .sidebar{
+            background-color: olivedrab;
+            color: white;
+            padding: 20px;
+        }
+
+        /*  First Breakpoint : applied when screen size is greater than 700px
+        */
+
+        @media screen and (min-width:700px){
+            .col-1{ width: 8.33%; }
+            .col-2{ width: 16.66%; }
+            .col-3{ width: 25%; }
+            .col-4{ width: 33.33%; }
+            .col-5{ width: 41.66%; }
+            .col-6{ width: 50%; }
+            .col-7{ width: 58.33%; }
+            .col-8{ width: 66.66%; }
+            .col-9{ width: 75%; }
+            .col-10{ width: 83.33%; }
+            .col-11{ width: 91.66%; }
+            .col-12{ width: 100%; }
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>Header of Our Website</h1>
+    </div>
+    <div class="row">
+        <div class="col-3 menu">
+            <ul>
+                <li>Rajkot</li>
+                <li>Surat</li>
+                <li>Baroda</li>
+                <li>Bhuj</li>
+                <li>Jamnagar</li>
+            </ul>
+        </div>
+
+        <div class="col-6">
+            <h1>This is Content of our Website</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident error iste, maiores commodi perferendis iure blanditiis laborum voluptatum, assumenda deleniti vitae consequuntur eaque quisquam, ut pariatur nemo atque porro! Maiores.</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident error iste, maiores commodi perferendis iure blanditiis laborum voluptatum, assumenda deleniti vitae consequuntur eaque quisquam, ut pariatur nemo atque porro! Maiores.</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident error iste, maiores commodi perferendis iure blanditiis laborum voluptatum, assumenda deleniti vitae consequuntur eaque quisquam, ut pariatur nemo atque porro! Maiores.</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident error iste, maiores commodi perferendis iure blanditiis laborum voluptatum, assumenda deleniti vitae consequuntur eaque quisquam, ut pariatur nemo atque porro! Maiores.</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident error iste, maiores commodi perferendis iure blanditiis laborum voluptatum, assumenda deleniti vitae consequuntur eaque quisquam, ut pariatur nemo atque porro! Maiores.</p>
+        </div>
+
+        <div class="sidebar col-3">
+            <h1>This is Sidebar</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt assumenda itaque corrupti animi suscipit reiciendis perferendis necessitatibus quaerat asperiores ab voluptatibus, ullam, ex laborum? Voluptate consequatur est placeat sunt minus?</p>
+        </div>
+    </div>
+
+    <div class="footer">
+        <h3>Footer of Our Website</h3>
+    </div>
+</body>
+</html>
