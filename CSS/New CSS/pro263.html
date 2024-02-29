@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        input[type="text"]{
+            padding: 20px;
+            box-sizing: border-box;
+            width: 100%;
+            background: url(images/icons8-phone-100.png) no-repeat left center;
+            background-size: 50px;
+            padding-left: 70px;
+        }       
+
+        .formDiv{
+            margin: 10px 0px;
+        }
+
+     
+
+        input[type="submit"], input[type="reset"]{
+            background-color: brown;
+            color: white;
+            padding: 10px;
+        }
+
+    </style>
+</head>
+<body>
+    <form>
+        <div class="formDiv">
+            <label for="phone">Enter Email Address</label>
+            <input type="text" name="phone" id="phone" required>
+        </div>
+        <input type="submit" value="Send Data">
+        <input type="reset" value="Reset">
+    </form>
+</body>
+</html>
