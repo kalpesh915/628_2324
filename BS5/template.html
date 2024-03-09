@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link href="Bootstrap5/css/bootstrap.min.css" rel="stylesheet">
+    <script src="Bootstrap5/js/bootstrap.bundle.min.js"></script>
+    <link href="style.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+        integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/brands.min.css"
+        integrity="sha512-8RxmFOVaKQe/xtg6lbscU9DU0IRhURWEuiI0tXevv+lXbAHfkpamD4VKFQRto9WgfOJDwOZ74c/s9Yesv3VvIQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body data-bs-spy="scroll">
+    <div class="container-fluid p-5 text-bg-primary">
+        <h1 class="display-1 text-center">Web Based Application</h1>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Corporis cumque amet vitae adipisci blanditiis
+            quasi ut ipsam in sed veritatis. Qui, beatae cumque? Perspiciatis magni voluptatibus quas distinctio iste
+            aliquid.</p>
+    </div>
+
+    <nav class="navbar navbar-expand-md bg-dark navbar-dark sticky-top">
+        <a class="navbar-brand" href="#">DevRaj</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="collapsibleNavbar">
+            <ul class="navbar-nav">
+                <li class="nav-item"><a href="#home" class="nav-link active">Home</a></li>
+                <li class="nav-item"><a href="#about" class="nav-link ">About</a></li>
+                <li class="nav-item"><a href="#products" class="nav-link ">Products</a></li>
+                <li class="nav-item"><a href="#services" class="nav-link ">Serivces</a></li>
+                <li class="nav-item"><a href="#faq" class="nav-link ">Faq</a></li>
+                <li class="nav-item"><a href="#team" class="nav-link ">Team</a></li>
+                <li class="nav-item"><a href="#contact" class="nav-link ">Contact</a></li>
+                <li class="nav-item"><a href="#myModal" class="nav-link" data-bs-toggle="modal"
+                        data-bs-target="#myModal">Login</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="container-fluid" id="home">
+        <h1 class="title">Home</h1>
+        <div class="row">
+            <div class="col-md-6">
+                <img src="images/ny.jpg" class="d-block w-100">
+            </div>
+            <div class="col-md-6">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique et accusamus officiis eius. Ipsum
+                    praesentium est, nobis fuga repudiandae doloremque. Et vero ipsam molestias a aut incidunt id quam
+                    nam.</p>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sapiente ducimus porro assumenda
+                    praesentium omnis adipisci rerum facilis? Accusamus, laborum sequi. Fuga provident ad quas quo error
+                    itaque ipsa repellat ullam?</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat, corporis saepe repellendus quasi
+                    earum quam labore vitae accusantium dicta blanditiis. Ipsa vitae totam saepe culpa aut excepturi
+                    laborum nulla minus?</p>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quidem sed veritatis minus ducimus nemo,
+                    incidunt a nisi? Aut sunt maxime maiores, tempora commodi, mollitia architecto non accusamus
+                    perspiciatis nam adipisci.</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="container-fluid" id="about">
+        <h1 class="title">About us</h1>
+        <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quam consequatur, laboriosam saepe nesciunt
+            officiis suscipit dignissimos ea cupiditate vel, obcaecati rem. Fugit impedit in quisquam consequatur, ipsam
+            harum consequuntur laborum!
+        </p>
+
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Beatae cum magni obcaecati consequatur delectus eum
+            consectetur repellat laboriosam. Reiciendis corrupti, facilis reprehenderit eius quas praesentium! Doloribus
+            iusto harum eos libero?</p>
+
+        <!-- Carousel -->
+        <div id="demo" class="carousel slide" data-bs-ride="carousel">
+
+            <!-- Indicators/dots -->
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#demo" data-bs-slide-to="0" class="active"></button>
+                <button type="button" data-bs-target="#demo" data-bs-slide-to="1"></button>
+                <button type="button" data-bs-target="#demo" data-bs-slide-to="2"></button>
+            </div>
+
+            <!-- The slideshow/carousel -->
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="images/la.jpg" alt="Los Angeles" class="d-block w-100">
+                </div>
+                <div class="carousel-item">
+                    <img src="images/chicago.jpg" alt="Chicago" class="d-block w-100">
+                </div>
+                <div class="carousel-item">
+                    <img src="images/ny.jpg" alt="New York" class="d-block w-100">
+                </div>
+            </div>
+
+            <!-- Left and right controls/icons -->
+            <button class="carousel-control-prev" type="button" data-bs-target="#demo" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon"></span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#demo" data-bs-slide="next">
+                <span class="carousel-control-next-icon"></span>
+            </button>
+        </div>
+    </div>
+
+    <div class="container-fluid" id="products">
+        <h1 class="title">Products</h1>
+        <div class="row">
+            <div class="col-md-4 products-box text-center">
+                <img src="images/la.jpg" class="d-block w-100">
+                <h2>Event 1</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet voluptatibus laborum voluptates eius,
+                    rem tempora inventore animi, natus laboriosam perspiciatis facere neque officiis temporibus autem
+                    est. Repellat quo consequuntur quae?</p>
+            </div>
+            <div class="col-md-4 products-box text-center">
+                <img src="images/chicago.jpg" class="d-block w-100">
+                <h2>Event 2</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet voluptatibus laborum voluptates eius,
+                    rem tempora inventore animi, natus laboriosam perspiciatis facere neque officiis temporibus autem
+                    est. Repellat quo consequuntur quae?</p>
+            </div>
+            <div class="col-md-4 products-box text-center">
+                <img src="images/ny.jpg" class="d-block w-100">
+                <h2>Event 3</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet voluptatibus laborum voluptates eius,
+                    rem tempora inventore animi, natus laboriosam perspiciatis facere neque officiis temporibus autem
+                    est. Repellat quo consequuntur quae?</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="container" id="services">
+        <h1 class="title">Services</h1>
+
+        <div class="row">
+            <div class="col-md-4 service-box">
+                <i class="fa fa-user"></i>
+                <h2>User Friendly</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus quam animi dolor nihil suscipit
+                    molestias dolorem esse nesciunt quos quisquam, adipisci repellendus culpa fugit sequi ipsam in,
+                    consectetur aperiam autem.</p>
+            </div>
+
+            <div class="col-md-4 service-box">
+                <i class="fa fa-users"></i>
+                <h2>User Friendly</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus quam animi dolor nihil suscipit
+                    molestias dolorem esse nesciunt quos quisquam, adipisci repellendus culpa fugit sequi ipsam in,
+                    consectetur aperiam autem.</p>
+            </div>
+
+            <div class="col-md-4 service-box">
+                <i class="fa fa-car"></i>
+                <h2>User Friendly</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus quam animi dolor nihil suscipit
+                    molestias dolorem esse nesciunt quos quisquam, adipisci repellendus culpa fugit sequi ipsam in,
+                    consectetur aperiam autem.</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="container-fluid" id="faq">
+        <h1 class="title">F.A.Q.</h1>
+        <div id="accordion">
+
+            <div class="card">
+                <div class="card-header">
+                    <a class="btn" data-bs-toggle="collapse" href="#collapseOne">
+                        Question 1
+                    </a>
+                </div>
+                <div id="collapseOne" class="collapse show" data-bs-parent="#accordion">
+                    <div class="card-body">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta a cumque consequuntur amet
+                        numquam inventore, et aut accusamus quas, ea enim quo vitae id harum vel sapiente earum quis.
+                        Nobis!
+                    </div>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card-header">
+                    <a class="collapsed btn" data-bs-toggle="collapse" href="#collapseTwo">
+                        Question 2
+                    </a>
+                </div>
+                <div id="collapseTwo" class="collapse" data-bs-parent="#accordion">
+                    <div class="card-body">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam explicabo dolores rerum, eum
+                        dolorem eligendi facere recusandae illo tenetur quos, aliquam amet officia tempora alias aperiam
+                        ex necessitatibus repudiandae sit?
+                    </div>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card-header">
+                    <a class="collapsed btn" data-bs-toggle="collapse" href="#collapseThree">
+                        Question 3
+                    </a>
+                </div>
+                <div id="collapseThree" class="collapse" data-bs-parent="#accordion">
+                    <div class="card-body">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis adipisci quae dolorum eos
+                        facere quasi odit ducimus aut, temporibus error, quis ex culpa, corporis ut quas molestias qui
+                        similique sit.
+                    </div>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card-header">
+                    <a class="collapsed btn" data-bs-toggle="collapse" href="#collapseFour">
+                        Question 4
+                    </a>
+                </div>
+                <div id="collapseFour" class="collapse" data-bs-parent="#accordion">
+                    <div class="card-body">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis adipisci quae dolorum eos
+                        facere quasi odit ducimus aut, temporibus error, quis ex culpa, corporis ut quas molestias qui
+                        similique sit.
+                    </div>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card-header">
+                    <a class="collapsed btn" data-bs-toggle="collapse" href="#collapseFive">
+                        Question 5
+                    </a>
+                </div>
+                <div id="collapseFive" class="collapse" data-bs-parent="#accordion">
+                    <div class="card-body">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis adipisci quae dolorum eos
+                        facere quasi odit ducimus aut, temporibus error, quis ex culpa, corporis ut quas molestias qui
+                        similique sit.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container" id="team">
+        <h1 class="title">Team</h1>
+
+        <div class="row">
+            <div class="col-md-3 team-box">
+                <img src="images/img_avatar3.png" class="w-100 rounded-circle">
+                <h2>Viraj</h2>
+                <hr>
+                <div class="social">
+                    <a href="#"><i class="fa fa-brands fa-facebook"></i></a>
+                    <a href="#"><i class="fa fa-brands fa-twitter"></i></a>
+                    <a href="#"><i class="fa fa-brands fa-linkedin"></i></a>
+                    <a href="#"><i class="fa fa-brands fa-instagram"></i></a>
+                    <a href="#"><i class="fa fa-brands fa-youtube"></i></a>
+                </div>
+            </div>
+
+            <div class="col-md-3 team-box">
+                <img src="images/img_avatar3.png" class="w-100 rounded-circle">
+                <h2>Devarshi</h2>
+                <hr>
+                <div class="social">
+                    <a href="#"><i class="fa fa-brands fa-facebook"></i></a>
+                    <a href="#"><i class="fa fa-brands fa-twitter"></i></a>
+                    <a href="#"><i class="fa fa-brands fa-linkedin"></i></a>
+                    <a href="#"><i class="fa fa-brands fa-instagram"></i></a>
+                    <a href="#"><i class="fa fa-brands fa-youtube"></i></a>
+                </div>
+            </div>
+
+            <div class="col-md-3 team-box">
+                <img src="images/img_avatar3.png" class="w-100 rounded-circle">
+                <h2>Bhavik</h2>
+                <hr>
+                <div class="social">
+                    <a href="#"><i class="fa fa-brands fa-facebook"></i></a>
+                    <a href="#"><i class="fa fa-brands fa-twitter"></i></a>
+                    <a href="#"><i class="fa fa-brands fa-linkedin"></i></a>
+                    <a href="#"><i class="fa fa-brands fa-instagram"></i></a>
+                    <a href="#"><i class="fa fa-brands fa-youtube"></i></a>
+                </div>
+            </div>
+
+            <div class="col-md-3 team-box">
+                <img src="images/img_avatar3.png" class="w-100 rounded-circle">
+                <h2>Nisagr</h2>
+                <hr>
+                <div class="social">
+                    <a href="#"><i class="fa fa-brands fa-facebook"></i></a>
+                    <a href="#"><i class="fa fa-brands fa-twitter"></i></a>
+                    <a href="#"><i class="fa fa-brands fa-linkedin"></i></a>
+                    <a href="#"><i class="fa fa-brands fa-instagram"></i></a>
+                    <a href="#"><i class="fa fa-brands fa-youtube"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container contact" id="contact">
+        <h1 class="title">Contact US</h1>
+        <div class="row">
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3691.6487498084357!2d70.77719667371444!3d22.291291579693066!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3959ca24fba3eff9%3A0x5d8fa26594bd37e3!2sShreemad%20Enterprise!5e0!3m2!1sen!2sin!4v1709991978212!5m2!1sen!2sin"
+                style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"
+                class="mw-100"></iframe>
+        </div>
+
+        <div class="row">
+            <div class="col-md-3 p-5 text-center">
+                <i class="fa fa-phone fa-3x"></i>
+                <hr>
+                <a href="tel:919898989898">91 989898 989898</a>
+            </div>
+            <div class="col-md-3 p-5 text-center">
+                <i class="fa fa-envelope fa-3x"></i>
+                <hr>
+                <a href="mailto:abc@gmail.com">abc@gmail.com</a>
+            </div>
+            <div class="col-md-3 p-5 text-center">
+                <i class="fa fa-location fa-3x"></i>
+                <hr>
+                <span>Kalawad Road Near Kansagra Collge</span>
+            </div>
+            <div class="col-md-3 p-5 text-center">
+                <i class="fa fa-clock fa-3x"></i>
+                <hr>
+                <span>9.00 AM to 9.00 PM <br>(Sunday Close)</span>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid text-bg-dark p-4 text-center">
+        <span>Designed by : Devarshi & Viraj</span>
+    </div>
+</body>
+
+
+<!-- The Modal -->
+<div class="modal" id="myModal">
+    <div class="modal-dialog">
+        <div class="modal-content">
+
+            <!-- Modal Header -->
+            <div class="modal-header">
+                <h4 class="modal-title">Login Form</h4>
+                <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+            </div>
+
+            <!-- Modal body -->
+            <div class="modal-body">
+                <form action="#" method="post">
+                    <div class="my-2 form-floating">
+                        <input type="email" name="email" id="email" placeholder="Enter Email Address"
+                            class="form-control">
+                        <label for="email" class="form-label">Enter Email Address</label>
+                    </div>
+                    <div class="my-2 form-floating">
+                        <input type="password" name="upass" id="upass" placeholder="Enter Password"
+                            class="form-control">
+                        <label for="upass" class="form-label">Enter Password</label>
+                    </div>
+                    <div class="my-2 form-floating">
+                        <input type="submit" value="Login" class="btn btn-primary">
+                        <input type="reset" value="Reset" class="btn btn-danger">
+                    </div>
+                </form>
+            </div>
+
+            <!-- Modal footer -->
+            <div class="modal-footer">
+                <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+</html>
