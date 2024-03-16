@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button onclick="increment()">Fontsize ++</button>
+    <button onclick="decrement()">Fontsize --</button>
+    <hr>
+    <p id="op">Lorem ipsum dolor sit amet, consectetur adipisicing elit. At velit quam, harum illo mollitia placeat aut labore quia doloremque, ea amet consectetur perferendis nulla itaque? Porro repudiandae aliquam sit numquam! Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate consequatur laborum, dolorum commodi harum sint doloribus dicta modi tempora officia amet assumenda quaerat ullam pariatur dignissimos, mollitia, cum maiores omnis. Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum cumque doloremque deleniti animi ipsa, totam possimus repellendus, cum, suscipit exercitationem commodi illo consequuntur! Voluptates quibusdam ea laboriosam ipsa sequi porro? Lorem ipsum dolor sit amet consectetur adipisicing elit. Non debitis odit recusandae sint? Eaque distinctio hic iusto repellendus impedit molestias tempora molestiae, omnis, quae dignissimos autem ipsam a maiores expedita. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sed at quod, assumenda a earum, nulla veritatis, cupiditate soluta facilis reprehenderit optio ipsum temporibus! Architecto sint iste velit tempore, quas debitis!</p>
+</body>
+</html>
+
+<script>
+    let op = document.getElementById("op");
+    let fontsize = 15;
+    function increment(){
+        fontsize += 5;
+        op.style.fontSize = fontsize+"px";
+    }
+
+    function decrement(){
+        fontsize -= 5;
+        if(fontsize <= 0){
+            fontsize = 5;
+        }
+        op.style.fontSize = fontsize+"px";
+    }
+</script>

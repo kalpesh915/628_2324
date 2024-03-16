@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button onclick="greetings()">Greetings</button>
+</body>
+</html>
+
+<script>
+    function greetings(){
+        let uname = prompt("Enter your name ");
+        document.write('<hr> Welcome '+uname+' To world of Java Script');
+        document.write("<hr> Welcome "+uname+" To world of Java Script");
+        // ` is know as backtick sign found below esc button of keyboard
+        document.write(`<hr> Welcome ${uname} To world of Java Script`);
+    }
+</script>

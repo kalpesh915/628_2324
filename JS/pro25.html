@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1 id="op">Press F12 and Select Console</h1>
+    <button onclick="greetings()">Greetings</button>
+</body>
+
+</html>
+
+<script>
+    /*
+        Using window.alert()
+        You can use an alert box to display data:
+    */
+
+    function greetings() {
+        console.log("Today is "+Date());
+        console.error("Today is "+Date());
+        console.warn("Today is "+Date());
+        console.info("Today is "+Date());
+        console.debug("Today is "+Date());
+    }
+</script>
