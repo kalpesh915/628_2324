@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+   
+</body>
+</html>
+
+<script>
+    /*
+        The let keyword was introduced in ES6 (2015) Variables declared with let have Block Scope Variables declared with let must be Declared before use Variables declared with let cannot be Redeclared in the same scope
+
+        Block Scope
+        Before ES6 (2015), JavaScript did not have Block Scope. JavaScript had Global Scope and Function Scope. ES6 introduced the two new JavaScript keywords: let and const. These two keywords provided Block Scope in JavaScript:
+    */ 
+
+    var ip1 = 10;
+
+    document.write("<hr> value of ip1 (before block) is "+ip1);
+
+    {
+        var ip1 = 100;
+        document.write("<hr> value of ip1 (in block) is "+ip1);
+    }
+
+    document.write("<hr> value of ip1 (after block) is "+ip1);
+
+</script>
