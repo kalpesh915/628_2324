@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        body{
+            text-align: center;
+        }
+
+        .tooltip{
+            position: relative;
+            display: inline-block;
+            border-bottom: 1px dotted black;
+        }
+
+        .tooltip-text{
+            background-color: yellow;
+            color: red;
+            padding: 20px;
+            display: none;
+            position: absolute;
+            width: 200px;
+            top: -50%;
+            right: 110%;
+        }
+
+        .tooltip:hover .tooltip-text{
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident ut voluptatum distinctio nobis reiciendis odio nihil eveniet, modi corporis ducimus delectus sit minus molestias porro cum quo excepturi itaque aperiam.</p>
+
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Officiis dolore, magnam laborum alias praesentium reiciendis voluptas necessitatibus veritatis quidem est eos distinctio sit ratione perspiciatis aut nesciunt vitae et pariatur?</p>
+
+    <div class="tooltip">
+        Mouse Over Me
+        <div class="tooltip-text">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sit, eum ducimus odit corrupti dolorem accusamus porro rerum in ipsam ex nesciunt molestias libero similique officiis dolorum natus nemo dolor sed!
+        </div>
+    </div>
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure, repellat sint assumenda atque neque veniam. Ut laboriosam eveniet mollitia nisi, velit magnam explicabo blanditiis quasi iste reiciendis ipsa voluptas corrupti.</p>
+
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Unde voluptate, assumenda veritatis nobis quisquam sequi corporis nulla nostrum sit magnam eaque voluptatibus voluptatem dicta at sint? Corrupti molestiae sunt atque!</p>
+</body>
+</html>
