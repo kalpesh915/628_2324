@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+   
+</body>
+</html>
+
+<script>
+    /*
+        Function Return
+        When JavaScript reaches a return statement, the function will stop executing.
+        If the function was invoked from a statement, JavaScript will "return" to execute the code after the invoking statement. Functions often compute a return value. The return value is "returned" back to the "caller":
+        
+        Why Functions?
+        With functions you can reuse code, You can write code that can be used many times. You can use the same code with different arguments, to produce different results.
+    */ 
+
+    function makeSum(x, y){
+        return x + y;
+    }   
+
+    let ip1, ip2, ans;
+
+    ip1 = Number(prompt("Enter value for ip1 "));
+    ip2 = Number(prompt("Enter value for ip2 "));
+
+    ans = makeSum(ip1, ip2);
+    document.write("<hr>Sum is "+ ans);
+</script>
