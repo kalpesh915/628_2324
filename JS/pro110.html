@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+</body>
+
+</html>
+
+<script>
+    /*
+        Object Methods
+        Objects can also have methods. Methods are actions that can be performed on objects. Methods are stored in properties as function definitions.
+    */
+
+    const student = {
+        roll: 1, 
+        fname: "Devarshi", 
+        lname: "Thakrar", 
+        city: "Rajkot", 
+        married: false,
+        getData : function(){
+            // In JavaScript, the this keyword refers to an object. Which object depends on how this is being invoked (used or called).
+            document.write("<hr>Welcome "+this.fname+" "+this.lname);
+        }
+    };
+
+    student.getData();
+</script>
