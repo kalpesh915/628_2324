@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    
+</body>
+
+</html>
+
+<script>
+    /*
+        Property Access [ ]
+        Property access might be a little unpredictable:
+
+        It makes strings look like arrays (but they are not)
+        If no character is found, [ ] returns undefined, while charAt() returns an empty string.
+        It is read only. str[0] = "A" gives no error (but does not work!)
+
+    */ 
+
+              //01234567890123456789012345678901234567
+    let str1 = "welcome to world of javascript strings";
+    document.write("<hr> "+str1);
+    document.write("<hr> "+str1[0]);
+    document.write("<hr> "+str1[12]);
+    document.write("<hr> "+str1[20]);
+</script>
