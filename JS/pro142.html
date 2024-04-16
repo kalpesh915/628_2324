@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    
+</body>
+
+</html>
+
+<script>
+    /*
+        Replacing String Content The replace() method replaces a specified value with another value in a string:
+
+        The replace() method does not change the string it is called on.
+        The replace() method returns a new string. The replace() method replaces only the first match
+
+    */ 
+              //012345678901234567890123456789012345678
+    let str1 = "Welcome to world of Java Script Strings";
+    document.write("<hr> String is "+str1.replace("o", "O"));
+
+    // If you want to replace all matches, use a regular expression with the /g flag set. See examples below.
+    document.write("<hr> String is "+str1.replace(/o/g, "O"));
+
+    document.write("<hr> String is "+str1.replaceAll("o", "O"));
+    
+</script>

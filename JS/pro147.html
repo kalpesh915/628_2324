@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    
+</body>
+
+</html>
+
+<script>
+    /*
+    JavaScript String search()
+    The search() method searches a string for a string (or a regular expression) and returns the position of the match:
+    */ 
+              //012345678901234567890123456789012345678
+    let str1 = "Welcome to world of Java Script of Strings";
+    
+    document.write("<hr> String is : "+str1);
+    
+    let ans = str1.matchAll(/o/gi);
+
+    //console.log(ans);
+
+    for(let x of ans){
+        document.write(" "+x);
+    }
+</script>
