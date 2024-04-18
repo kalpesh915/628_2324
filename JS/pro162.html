@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="number" name="ip1" id="ip1" onkeyup="convert(this.value)">
+    <hr>
+    <p id="bin"></p>
+    <p id="oct"></p>
+    <p id="dec"></p>
+    <p id="hex"></p>
+</body>
+</html>
+
+<script>
+    function convert(value){
+        //alert(value);
+        value = Number(value);
+        document.getElementById("bin").innerHTML = "Binary : "+value.toString(2);
+        document.getElementById("oct").innerHTML = "Octal : "+value.toString(8);
+        document.getElementById("dec").innerHTML = "Decimal : "+value.toString(10);
+        document.getElementById("hex").innerHTML = "Hex Decimal : "+value.toString(16);
+    }
+</script>
