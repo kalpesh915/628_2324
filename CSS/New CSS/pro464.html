@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        ul.breadcrumb {
+            padding: 8px 16px;
+            list-style: none;
+            background-color: #eeeeee;
+        }
+
+        ul.breadcrumb li{
+            display: inline;
+        }
+
+        ul.breadcrumb li+li::before{
+            padding: 10px;
+            color: black;
+            content: "/";
+        }
+    </style>
+</head>
+<body>
+    <ul class="breadcrumb">
+        <li>Home</li>
+        <li>Settings</li>
+        <li>Profile</li>
+        <li>Security</li>
+        <li>Password</li>
+    </ul>
+</body>
+</html>
