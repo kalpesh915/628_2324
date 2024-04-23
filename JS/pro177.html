@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+</html>
+
+<script>
+    /*
+        The parseFloat() Method : parseFloat() parses a string and returns a number. Spaces are allowed. Only the first number is returned:
+    */ 
+    
+    document.write("<hr> parseFloat is "+parseFloat(true));
+    document.write("<hr> parseFloat is "+parseFloat(false));
+    document.write("<hr> parseFloat is "+parseFloat("10"));
+    document.write("<hr> parseFloat is "+parseFloat("  10"));
+    document.write("<hr> parseFloat is "+parseFloat("10  "));
+    document.write("<hr> parseFloat is "+parseFloat(" 10  "));
+    document.write("<hr> parseFloat is "+parseFloat("10.33"));
+    document.write("<hr> parseFloat is "+parseFloat("10,33"));
+    document.write("<hr> parseFloat is "+parseFloat("10 33"));
+    document.write("<hr> parseFloat is "+parseFloat("John"));
+    document.write("<hr> parseFloat is "+parseFloat(new Date()));
+
+    // If the number cannot be converted, NaN (Not a Number) is returned.
+</script>

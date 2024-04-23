@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+</html>
+
+<script>
+    /*
+        The parseInt() Method : parseInt() parses a string and returns a whole number. Spaces are allowed. Only the first number is returned:
+    */ 
+    
+    document.write("<hr> parseInt is "+parseInt(true));
+    document.write("<hr> parseInt is "+parseInt(false));
+    document.write("<hr> parseInt is "+parseInt("10"));
+    document.write("<hr> parseInt is "+parseInt("  10"));
+    document.write("<hr> parseInt is "+parseInt("10  "));
+    document.write("<hr> parseInt is "+parseInt(" 10  "));
+    document.write("<hr> parseInt is "+parseInt("10.33"));
+    document.write("<hr> parseInt is "+parseInt("10,33"));
+    document.write("<hr> parseInt is "+parseInt("10 33"));
+    document.write("<hr> parseInt is "+parseInt("John"));
+    document.write("<hr> parseInt is "+parseInt(new Date()));
+
+    // If the number cannot be converted, NaN (Not a Number) is returned.
+</script>

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+</html>
+
+<script>
+    /*
+        How to Recognize an Array
+        A common question is: How do I know if a variable is an array?
+        The problem is that the JavaScript operator typeof returns "object":
+    */
+
+        const data1 = [11, 22, 33, 44, 55, 66, 77, 88, 99, 111];
+        
+        document.write("<hr>"+data1+" type is "+typeof(data1));
+        document.write("<hr>"+data1+" type is "+Array.isArray(data1));
+        document.write("<hr>"+data1+" type is "+(data1 instanceof Array));
+</script>
