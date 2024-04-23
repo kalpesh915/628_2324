@@ -1,0 +1,13 @@
+body{
+    background-color: orangered;
+}
+
+h1{
+    background-color: purple;
+    color: white;
+}
+
+p{
+    padding: 20px;
+    text-align: center;
+}
