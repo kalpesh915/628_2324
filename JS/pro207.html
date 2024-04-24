@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+</html>
+
+<script>
+    /*
+        Shifting Elements
+        Shifting is equivalent to popping, but working on the first element instead of the last.
+    */
+        const city = ["Rajkot", "Surat", "Ahamdabad", "Baroda", "Bhuj"];
+
+        document.write("<hr>"+city);
+        city.unshift("Jamanagar");
+        city.unshift("Junagadh");
+        document.write("<hr>"+city);
+
+        city.shift();
+        city.shift();
+        city.shift();
+        document.write("<hr>"+city);
+
+</script>

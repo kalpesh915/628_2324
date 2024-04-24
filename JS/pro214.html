@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+</html>
+
+<script>
+    /*
+        Flattening an Array
+        Flattening an array is the process of reducing the dimensionality of an array.
+
+        Flattening is useful when you want to convert a multi-dimensional array into a one-dimensional array.
+        JavaScript Array flat()
+        ES2019 Introduced the Array flat() method.
+        The flat() method creates a new array with sub-array elements concatenated to a specified depth.
+
+    */
+        const city1 = [
+            ["Rajkot", "Surat"], 
+            ["Ahamdabad", "Baroda"],
+            ["Bhuj", "Junagadh"]    
+        ];   
+
+        console.log(city1);
+        city2 = city1.flat(1);
+        console.log(city2);
+        
+</script>
