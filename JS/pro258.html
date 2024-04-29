@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+</body>
+
+</html>
+
+<script>
+    /*
+        You cannot omit month. If you supply only one parameter it will be treated as milliseconds.
+    */
+
+    document.write("<hr> Today is "+new Date(2024, 3));
+    document.write("<hr> Today is "+new Date(2024)); // miliseconds from 1st jan 1970 00:00:00
+    document.write("<hr> Today is "+new Date(202456465));
+    document.write("<hr> Today is "+new Date(2024564659879));
+    document.write("<hr> Today is "+new Date(1714399134000));
+</script>
