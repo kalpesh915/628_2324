@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+</body>
+
+</html>
+
+<script>
+    /*
+        The getTimezoneOffset() Method
+        The getTimezoneOffset() method returns the difference (in minutes) between local time an UTC time:
+    */
+
+    const today = new Date();
+
+    document.write("<hr>" + today.getHours());
+    document.write("<hr>" + today.getUTCHours());
+    document.write("<hr>" + today.getTimezoneOffset()); // (-330 = 5:30 hours)
+    
+    
+</script>
