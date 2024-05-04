@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+</body>
+
+</html>
+<script>
+    /*
+        count how many digits in enetered number 
+    */
+
+    let x = Number(prompt("Enter any number"));
+    let ans = 0;
+
+    document.write("Entered Number is "+x+" ");
+
+    while(x > 0){
+        ans++;
+        x = parseInt(x / 10);
+    }
+
+    document.write("Answer is "+ans);
+
+</script>
