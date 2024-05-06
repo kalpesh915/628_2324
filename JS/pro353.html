@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+</body>
+
+</html>
+
+<script>
+    /*
+        The entries() Method
+        The entries() method returns an Iterator with [value,value] pairs from a Set.
+        The entries() method is supposed to return a [key,value] pair from an object.
+        A Set has no keys, so the entries() method returns [value,value].
+        This makes Sets compatible with Maps.
+    */
+
+    let students = new Set(["Viraj", "Nisarg", "Devarshi"]);
+
+    for(let x of students.entries()){
+        document.write("<hr>"+x); 
+    }
+</script>

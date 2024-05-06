@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+</body>
+
+</html>
+
+<script>
+    /*
+        A JavaScript iterable is an object that has a Symbol.iterator.
+        The Symbol.iterator is a function that returns a next() function. An iterable can be iterated over with the code: for (const x of iterable) { } 
+    */
+
+    const myNumbers = {};
+
+    myNumbers[Symbol.iterator] = function () {
+        let n = 0;
+        done = false;
+
+        return{
+            next(){
+                n += 5;
+
+                if(n > 100){
+                    done = true;
+                }
+
+                return {
+                    value : n,
+                    done : done
+                }
+            }
+        }
+    }
+
+    for(let x of myNumbers){
+        console.log(x);
+    }
+</script>
