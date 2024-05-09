@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    
+</body>
+
+</html>
+
+<script>
+    /*
+        JavaScript Uses 32 bits Bitwise Operands
+        JavaScript stores numbers as 64 bits floating point numbers, but all bitwise operations are performed on 32 bits binary numbers.
+        Before a bitwise operation is performed, JavaScript converts numbers to 32 bits signed integers.
+        After the bitwise operation is performed, the result is converted back to 64 bits JavaScript numbers.
+
+        JavaScript Bitwise AND
+        When a bitwise AND is performed on a pair of bits, it returns 1 if both bits are 1.
+
+        bit1    bit2    answer
+        1       0       0
+        0       1       0
+        0       0       0
+        1       1       1
+    */
+
+    let ip1 = 10, ip2 = 12;
+
+    /*
+        ip1     10      1010
+        ip2     12      1100
+        ans             1000
+    */
+
+    let ans = ip1 & ip2;
+
+    document.write("<hr>"+(ans));
+</script>
