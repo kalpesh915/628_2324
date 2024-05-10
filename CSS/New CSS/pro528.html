@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+
+        body{
+            margin: 0px;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        .header{
+            text-align: center;
+            padding: 30px;
+        }
+
+        .row{
+            display: flex;
+            flex-wrap: wrap;
+            padding: 0px 4px;
+        }
+
+        .column{
+            flex: 25%;
+            max-width: 25%;
+            padding: 0px;
+        }
+
+        .column img{
+            margin-top: 8px;
+            vertical-align: middle;
+            width: 100%;
+        }
+
+        @media screen and (max-width:800px){
+            .column{
+                flex: 50%;
+                max-width: 50%;
+            }
+        }
+
+        @media screen and (max-width:500px){
+            .column{
+                flex: 100%;
+                max-width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>Responsive Image Gallery</h1>
+        <p>Resize the browser window to see the responsive effect.</p>
+    </div>
+
+    <div class="row">
+        <div class="column">
+            <img src="images/img_avatar.png">
+        </div>
+        <div class="column">
+            <img src="images/img_forest.jpg">
+        </div>
+        <div class="column">
+            <img src="images/img_chania.jpg">
+        </div>
+        <div class="column">
+            <img src="images/img_5terre.jpg">
+        </div>
+        <div class="column">
+            <img src="images/img_man.jpg">
+        </div>
+        <div class="column">
+            <img src="images/img_tree.gif">
+        </div>
+        <div class="column">
+            <img src="images/img_avatar.png">
+        </div>
+        <div class="column">
+            <img src="images/img_forest.jpg">
+        </div>
+        <div class="column">
+            <img src="images/img_chania.jpg">
+        </div>
+        <div class="column">
+            <img src="images/img_5terre.jpg">
+        </div>
+        <div class="column">
+            <img src="images/img_man.jpg">
+        </div>
+        <div class="column">
+            <img src="images/img_avatar.png">
+        </div>
+        <div class="column">
+            <img src="images/img_forest.jpg">
+        </div>
+        <div class="column">
+            <img src="images/img_chania.jpg">
+        </div>
+        <div class="column">
+            <img src="images/img_5terre.jpg">
+        </div>
+        <div class="column">
+            <img src="images/img_man.jpg">
+        </div>
+    </div>
+</body>
+</html>
