@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>  
+</body>
+</html>
+
+<script>
+    /*  
+        The Error Object
+        JavaScript has a built in error object that provides error information when an error occurs.
+        
+        The error object provides two useful properties: name and message.
+        Error Object Properties Property	Description
+        name	Sets or returns an error name
+        message	Sets or returns an error message (a string)
+    */
+
+    try{
+        decodeURI("!@$#%$^&*&8");
+    }catch(err){
+        //document.write("<hr> Error is "+err);
+        document.write("Error Name is "+err.name+" Message is "+err.message);
+        document.write(" Error in line : "+err.lineNumber);
+    }finally{
+        document.write("<hr> Finally Block");
+    }
+</script>

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+</body>
+
+</html>
+
+<script>
+    /*
+        JavaScript Throws Errors
+        When an error occurs, JavaScript will normally stop and generate an error message.The technical term for this is: JavaScript will throw an exception (throw an error). JavaScript will actually create an Error object with two properties: name and message.
+    */
+
+    function divide(ip1, ip2) {
+        if(ip2 == 0){
+            throw "Division not Possible";
+        }else{
+            document.write("Division is "+( ip1 / ip2));
+        }
+    }
+
+    try{
+        divide(100, 0);
+    }catch(err){
+        document.write("Error is "+err);
+    }
+    
+</script>

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>  
+</body>
+</html>
+
+<script>
+    /*  
+        The finally Statement
+        The finally statement lets you execute code, after try and catch, regardless of the result:
+        Syntax
+        try {
+            Block of code to try
+        }
+        catch(err) {
+            Block of code to handle errors
+        }
+        finally {   
+            Block of code to be executed regardless of the try / catch result
+        } 
+    */
+
+    try{
+        // error code
+        document.write(100 / 10);
+    }catch(err){
+        document.write("<hr> Error is "+err);
+    }finally{
+        document.write("<hr> Finally Block");
+    }
+</script>
