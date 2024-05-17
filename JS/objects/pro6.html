@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+</body>
+
+</html>
+
+<script>
+    /*
+        JavaScript Objects are Mutable
+        Objects are mutable: They are addressed by reference, not by value.
+        If person is an object, the following statement will not create a copy of person:
+    */
+
+    let student = {
+        roll: 1,
+        fname: "Devarshi",
+        lname: "Thakar",
+        city: "Rajkot",
+    }
+
+    for(let x in student){
+        document.write(" "+student[x]);
+    }
+</script>
