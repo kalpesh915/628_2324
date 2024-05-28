@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+</body>
+
+</html>
+
+<script>
+    /*
+        Using JSON.stringify() Any JavaScript object can be stringified (converted to a string) with the JavaScript function JSON.stringify():
+    */
+
+    let student = {
+        roll: 1,
+        fname: "Devarshi",
+        lname: "Thakar",
+        city: "Rajkot"
+    }
+
+    let {fname, lname, city, state="Gujarat"} = student;
+
+    document.write("Welcome  "+fname+" "+lname+" city is "+city+" State is "+state);
+</script>
