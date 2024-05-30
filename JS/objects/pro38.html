@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+</body>
+
+</html>
+
+<script>
+    /*
+        The Object.assign() method copies properties from one or more source objects to a target object.
+    */
+
+    const student1 = {
+        roll: 1,
+        fname: "Devarshi",
+        lname: "Thakkar",
+        city: "Rajkot",
+        eye: "Black"
+    }
+
+    const student2 = {
+        roll: 2,
+        fname: "Viraj",
+        lname: "Bhatti"
+    }
+
+    Object.assign(student1, student2);
+
+    console.log(student1);
+    console.log(student2);
+
+</script>
