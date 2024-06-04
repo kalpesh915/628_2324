@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+</html>
+
+<script>
+    let person = {
+        fname: "Devarshi",
+        lname: "Thakar",
+        set fn(fn){
+            this.fname = fn;
+        },
+        set ln(ln){
+            this.lname = ln;
+        },
+        get fn(){
+            return this.fname;
+        },
+        get ln(){
+            return this.lname;
+        }
+    };
+
+    document.write("<hr>"+person.fn+" "+person.ln);
+
+    person.fn = "Viraj";
+    person.ln = "Bhatti";
+
+    document.write("<hr>"+person.fn+" "+person.ln);
+
+
+</script>
