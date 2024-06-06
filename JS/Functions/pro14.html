@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+</body>
+
+</html>
+
+<script>
+    /*
+        Function Rest Parameter
+        The rest parameter (...) allows a function to treat an indefinite number of arguments as an array:
+    */
+
+    function sum2(x, y){
+        document.write("<hr>Sum is "+(x+y));
+    }    
+
+    function sum3(x, y, z){
+        document.write("<hr>Sum is "+(x+y+z));
+    }
+    
+    function sum4(x, y, z, a){
+        document.write("<hr>Sum is "+(x+y+z+a));
+    }
+
+    function sum5(x, y, z, a, b){
+        document.write("<hr>Sum is "+(x+y+z+a+b));
+    }
+
+    sum2(11, 22);
+    sum3(11, 22, 33);
+    sum4(11, 22, 33, 44);
+    sum5(11, 22, 33, 44, 55);
+</script>
