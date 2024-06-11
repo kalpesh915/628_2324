@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+</html>
+
+<script>
+    let student = {
+        fname : "Devarshi",
+        lname : "Thakar",
+        fullname : function(){
+            return "<hr>"+this.fname+" "+this.lname;
+        }
+    };
+
+    let student1 = {
+        fname : "Viraj",
+        lname : "Bhatti"
+    };
+
+    let student2 = {
+        fname : "Nisarg",
+        lname : "Kapupara"
+    };
+
+    let fn = student.fullname.bind(student1);
+    document.write(fn());
+    fn = student.fullname.bind(student2);
+    document.write(fn());
+    fn = student.fullname.bind(student);
+    document.write(fn());
+</script>
