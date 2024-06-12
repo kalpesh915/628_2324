@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+</body>
+
+</html>
+
+<script>
+
+
+    let obj1 = new student(11, "Devarshi", "Thakar");
+    obj1.printer();
+
+    document.write("<hr>" + obj1.fn);
+    obj1.fn = "DEVARSHI";
+    document.write("<hr>" + obj1.fn);
+    class student {
+        constructor(roll, fname, lname) {
+            this.roll = roll;
+            this.fname = fname;
+            this.lname = lname;
+        }
+
+        printer() {
+            document.write(`<hr> welcome ${this.fname} ${this.lname} your roll no. is ${this.roll}`);
+        }
+
+        get fn() {
+            return this.fname;
+        }
+
+        set fn(newfn) {
+            this.fname = newfn;
+        }
+    }
+
+</script>

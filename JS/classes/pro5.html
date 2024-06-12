@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+</html>
+
+<script>
+    // parent class
+    class Math1{
+        sum(i, j){
+            document.write("<hr> Sum is "+(i + j));
+        }
+        sub(i, j){
+            document.write("<hr> Sub is "+(i - j));
+        }
+    }
+
+    // child class
+    class Math2 extends Math1{
+        div(i, j){
+            document.write("<hr> Div is "+(i / j));
+        }
+        mul(i, j){
+            document.write("<hr> Mul is "+(i * j));
+        }
+    }
+
+    obj = new Math2();
+
+    obj.sum(111, 22);
+    obj.sub(111, 22);
+    obj.mul(111, 22);
+    obj.div(111, 22);
+</script>
