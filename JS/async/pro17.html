@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="op"></div>
+</body>
+</html>
+
+<script>
+    async function loadFile(){
+        let myPromise = new Promise((resolve, reject)=> {
+            let xmlhttp = new XMLHttpRequest();
+            xmlhttp.open("GET", "data.txt", true);
+            xmlhttp.send();
+
+            xmlhttp.onload = function(){
+                if(xmlhttp.status == 200){
+                    resolve(xmlhttp.responseText);
+                }else{
+                    reject(xmlhttp.responseText);
+                }
+            }
+        });
+
+        document.getElementById("op").innerHTML = await myPromise;
+    }
+
+    loadFile();
+</script>

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1 id="op"></h1>
+</body>
+
+</html>
+
+<script>
+    /*
+    */
+
+    function printer(data){
+        document.getElementById("op").innerHTML = data;
+    }
+
+    const data = [115, 15, 147, 95, -98, 5, -85, 99, -78, -58, -96, 14, 15, -52];
+
+    let ans = removeNegative(data, (x) => x >= 0);
+
+    printer(ans);
+
+    function removeNegative(data, callback){
+        let result = [];
+
+        for(x of data){
+            if(callback(x)){
+                result.push(x);
+            }
+        }
+
+        return result;
+    }
+</script>

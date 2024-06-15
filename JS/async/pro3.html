@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1 id="op"></h1>
+</body>
+
+</html>
+
+<script>
+    /*
+    */
+
+    function printer(data){
+        document.getElementById("op").innerHTML = data;
+    }
+
+    function makeSum(ip1, ip2){
+        return ip1 + ip2;
+    }
+
+    // step 1
+    let ans = makeSum(11, 22);
+    // step 2
+    printer(ans);
+    
+</script>
