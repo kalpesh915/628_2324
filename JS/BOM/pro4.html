@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button onclick="openWindow()">Open Window</button>
+    <button onclick="closeWindow()">Close Window</button>
+</body>
+</html>
+
+<script>
+    let myWindow;
+    function openWindow(){
+        myWindow = window.open("https://www.google.com", "_blank", "height=500 width=500");
+        myWindow.focus();
+    }
+
+    function closeWindow(){
+        myWindow.close();
+    }
+
+</script>
