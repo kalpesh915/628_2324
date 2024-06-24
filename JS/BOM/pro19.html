@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button onclick="example()">Click me</button>
+    <button onclick="stopAnimation()">Stop Animation</button>
+
+    <h1 id="op"></h1>
+</body>
+</html>
+
+<script>
+    let animation = null;
+
+    function example(){
+        if(animation == null){
+            animation = setInterval(printer, 1000);
+        }
+    }
+
+    function printer(){
+        let today = new Date();
+        document.getElementById("op").innerHTML = today.getHours()+":"+today.getMinutes()+":"+today.getSeconds();
+    }
+
+    function stopAnimation(){
+        if(animation !== null){
+            clearInterval(animation);
+            animation = null;
+        }
+    }
+</script>
