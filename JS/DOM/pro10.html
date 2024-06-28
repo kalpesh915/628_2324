@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Devarshi</title>
+</head>
+<body>
+    <button onclick="increase()">++</button>
+    <button onclick="decrease()">--</button>
+   <p id="ptag">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vel officiis, accusamus et fugit odit dolores cupiditate sequi dolore nisi laboriosam, quibusdam quaerat ipsam, nulla rerum adipisci a laudantium eveniet libero?
+   Eum cupiditate aspernatur voluptatem voluptatibus corrupti minima iusto! Accusantium ad ut nam temporibus eum voluptatibus minima? Quis nemo unde sapiente itaque. Labore ab blanditiis, pariatur quos beatae saepe rerum voluptates.
+   Unde laborum ratione eaque doloribus commodi quos nostrum aliquid et dolores veritatis quia amet corrupti dicta voluptas, nesciunt aperiam, a maxime repellat nulla recusandae voluptate! Ex veniam tenetur aliquid quidem!
+   Unde dolores tempora ea ipsum deleniti vel mollitia modi corrupti nihil harum pariatur, molestias dolore incidunt accusamus consequatur magnam accusantium. Dolorem sint, asperiores animi soluta velit eum sapiente tempora repudiandae?
+   Expedita sed itaque neque provident. Reprehenderit assumenda fuga eveniet optio earum similique doloribus repellat itaque quas! Corrupti, eum? Voluptates, iusto itaque soluta animi deleniti quos nulla dolore. Nemo, esse dicta!
+   Vero enim corporis quos quia error debitis? Quisquam obcaecati quo tempore repudiandae iusto, maiores repellat mollitia facilis expedita. Explicabo magni totam laboriosam. Iste ducimus quibusdam quos harum, dolor doloremque error?
+   Tempore natus, incidunt enim quis ab sunt, odit error quas expedita nobis illum, numquam dolorum quibusdam? Nemo fugiat at adipisci facilis nam iure quasi, blanditiis libero dolore animi debitis obcaecati.
+   Voluptas illum earum cum iure, dolore quo. Illo fuga officiis id architecto veniam minima consequatur adipisci earum eos autem. Atque aliquid harum ipsa nulla reprehenderit maiores eveniet consequatur repudiandae. Aliquam!
+   Quo accusantium impedit nesciunt odit sed explicabo aliquid. Corporis, saepe incidunt ad sequi distinctio quos fugit facilis voluptates, assumenda maiores illo accusantium impedit ex quam laborum sint quasi aliquid laudantium!
+   Quasi iure in sed, aut soluta dolorem nisi! Corporis soluta nam nulla quisquam, blanditiis quidem natus, earum cumque maxime esse, repellat fugiat eos! Consequatur sunt ipsam cupiditate magni et voluptatum.</p>
+</body>
+</html>
+
+<script>
+    let fontSize = 10;
+
+    let ptag = document.getElementById("ptag");
+
+    function increase(){
+        fontSize += 5;
+        ptag.style.fontSize = fontSize+"px";
+    }
+
+    function decrease(){
+        fontSize -= 5;
+        ptag.style.fontSize = fontSize+"px";
+    }
+</script>
