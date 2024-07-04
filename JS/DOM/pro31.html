@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div{
+            border: 1px solid black;
+        }
+    </style>
+</head>
+<body>
+    <div id="mydiv">
+        <h1 id="myh1">Node Example</h1>
+        <p id="myptag">Lorem ipsum dolor sit amet consectetur adipisicing elit. Non nobis illum cupiditate ratione quo odio distinctio, magnam est natus illo eveniet cum fuga inventore, tenetur eum quas vero beatae adipisci.</p>
+    </div>
+
+    <button onclick="nodeProcess()">Add Node</button>
+</body>
+</html>
+
+<script>
+    let mydiv = document.getElementById("mydiv");
+    let myptag = document.getElementById("myptag");
+
+    function nodeProcess(){
+        const ptag = document.createElement("p");
+        const text = document.createTextNode("Welcome");
+
+        ptag.append(text);
+
+        mydiv.replaceChild(ptag, myptag);
+    }
+</script>
