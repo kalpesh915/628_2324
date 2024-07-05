@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Local Storage Example</h1>
+    <button onclick="setFname()">Set Fname</button>
+    <button onclick="setLname()">Set Lname</button>
+    <button onclick="getFname()">Get Fname</button>
+    <button onclick="getLname()">Get Lname</button>
+    <button onclick="updateData()">Update </button>
+    <button onclick="removeFname()">Remove Fname</button>
+    <button onclick="removeLname()">Remove Lname</button>
+    <button onclick="countData()">Count</button>
+    <button onclick="clearData()">Clear</button>
+</body>
+</html>
+
+<script>
+    function setFname(){
+        let fname = prompt("Enter first name ");
+        localStorage.setItem("fname", fname);
+    }
+
+    function setLname(){
+        let lname = prompt("Enter Last name ");
+        localStorage.setItem("lname", lname);
+    }
+
+    function getFname(){
+        alert(localStorage.getItem("fname"));
+    }
+
+    function getLname(){
+        alert(localStorage.getItem("lname"));
+    }
+
+    function updateData(){
+        let fname, lname;
+        fname = prompt("Enter First name ");
+        lname = prompt("Enter Last name ");
+
+        localStorage.setItem("fname", fname);
+        localStorage.setItem("lname", lname);
+    }
+
+    function removeFname(){
+        localStorage.removeItem("fname");
+    }
+
+    function removeLname(){
+        localStorage.removeItem("lname");
+    }
+
+    function countData(){
+        alert("Total Data is "+localStorage.length);
+    }
+
+    function clearData(){
+        localStorage.clear();
+    }
+</script>

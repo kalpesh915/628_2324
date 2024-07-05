@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form>
+        <input type="number" name="age" id="age" min="0" max="100" step="5" value="1">
+        <input type="button" value="Send Data" onclick="validate()">
+    </form>
+
+    <hr>
+    <h1 id="op"></h1>
+</body>
+</html>
+
+<script>
+    let op = document.getElementById("op");
+    
+    function validate(){
+        const inputElement = document.getElementById("age");
+
+        if(!inputElement.checkValidity()){
+            op.innerHTML = inputElement.validationMessage;
+        }
+    }
+</script>
