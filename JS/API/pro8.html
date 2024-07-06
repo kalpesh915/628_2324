@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button onclick="loadData()">Load Data</button>
+    <hr>
+    <div id="op"></div>
+</body>
+</html>
+
+<script>
+    function loadData(){
+        // fetch data from .txt file
+        fetch("data.txt").then(function(response){
+            // get response from .txt file
+            //console.log(response.text().value);
+
+            // convert reposnse to text
+            response.text().then(function(data){
+                //console.log(data);
+                // display text in div tag
+                document.getElementById("op").innerHTML = data;
+            });
+        });        
+    }
+</script>
