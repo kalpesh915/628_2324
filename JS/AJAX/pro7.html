@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button type="button" onclick="loadFile()">Load File</button>
+    <hr>
+    <div id="op">
+        <h1>Press Button to Load New Data</h1>
+    </div>
+</body>
+</html>
+
+<script>
+    let op = document.getElementById("op");
+
+    function loadFile(){
+        const xmlHttp = new XMLHttpRequest();
+
+        xmlHttp.onload = function(){
+            if(xmlHttp.readyState == 4 && xmlHttp.status == 200){
+                //console.log(xmlHttp.responseText);
+                op.innerHTML = xmlHttp.responseText;
+            }
+        }
+
+        xmlHttp.open("GET", "https://dummyjson.com/products", true);
+        xmlHttp.send();
+    }
+</script>
