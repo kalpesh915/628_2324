@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <script src="jquery-3.7.1.min.js"></script>
+    <script src="jquery-color-3.7.1.min.js"></script>
+</head>
+<body>
+    <button id="btn1">Click Me</button>
+    <hr>
+    <p id="text1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt recusandae deserunt saepe quidem aut veritatis praesentium neque ex, suscipit voluptatibus debitis officiis vel quisquam. Tempora eum repellendus eligendi error omnis.</p>
+    <p class="demo">Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt illum fuga maiores laudantium amet inventore sit cumque vero quisquam adipisci praesentium, similique aperiam pariatur exercitationem labore repudiandae neque nulla nihil!</p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Expedita praesentium veritatis ad minus numquam iure doloremque dignissimos nesciunt, similique repudiandae at, rerum fugiat voluptate. Enim, quo. Libero officia vel aspernatur.</p>
+</body>
+</html>
+
+<script>
+    $(function(){
+        $("#btn1").click(function(){
+            $("p").hide(5000);
+        });
+    });
+</script>
