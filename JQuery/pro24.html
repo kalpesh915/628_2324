@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <script src="jquery-3.7.1.min.js"></script>
+    <script src="jquery-color-3.7.1.min.js"></script>
+</head>
+<body>
+    <button id="btn1">Slide Out</button>
+    <button id="btn2">Slide In</button>
+    <button id="btn3">Slide Toggle</button>
+    <hr>
+    <p id="op">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat explicabo saepe beatae veritatis doloremque atque vero, dicta ex delectus soluta odit harum voluptatem impedit, dolor assumenda incidunt unde suscipit nostrum. Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur a quas doloribus sit ut voluptatibus perspiciatis doloremque optio dicta laborum animi, illum mollitia vel quasi cum debitis saepe modi voluptates. Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint, explicabo quis. Corrupti temporibus ex sunt quis illo consectetur iste earum sed modi molestias, itaque quaerat at placeat ipsa quod doloribus?
+    Maiores, culpa distinctio molestias sint quisquam tempore error reiciendis autem consequuntur, explicabo, repudiandae animi. Vel soluta animi culpa nesciunt deserunt corrupti amet. Neque dolorum adipisci cum, necessitatibus ullam asperiores maxime?
+    Obcaecati expedita tenetur dolor nihil eos quisquam placeat blanditiis porro error dolore delectus corporis quia minima sed unde, recusandae reprehenderit velit atque. Omnis hic fugit animi veniam assumenda alias sint.
+    Ullam molestiae ratione et dolorem amet pariatur nam illo fugiat illum libero ab, quos, dignissimos soluta nisi ut recusandae. Dolor sint, nulla ratione nesciunt voluptatum cumque unde distinctio? Ipsam, quidem.
+    Eveniet harum veritatis itaque. Vitae perspiciatis beatae, quibusdam reprehenderit dolorem quam iusto omnis a dignissimos ex et provident qui hic maxime? Natus vel aut at culpa corporis earum, dolor obcaecati.</p>
+</body>
+</html>
+
+<script>
+    $(document).ready(function(){
+        $("#btn1").click(function(){
+            $("#op").slideUp(2000);
+        });
+
+        $("#btn2").click(function(){
+            $("#op").slideDown(2000);
+        });
+
+        $("#btn3").click(function(){
+            $("#op").slideToggle(2000);
+        });
+    });
+</script>
