@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <script src="jquery-3.7.1.min.js"></script>
+    <script src="jquery-color-3.7.1.min.js"></script>
+
+    <style>
+       
+    </style>
+</head>
+<body>
+    <button id="btn1">Set Contetnt</button>
+    <button id="btn2">Set HTML</button>
+    <button id="btn3">Set Value</button>
+
+    <hr>
+    <div id="op">
+        Welcome to <b>World</b> of <i>JQuery</i>
+    </div>
+
+    <input type="text" name="fname" id="fname" value="Viraj">
+</body>
+</html>
+
+<script>
+    $(document).ready(function(){
+        $("#btn1").click(function(){            
+            $("#op").text("Welcome to our tutorial");
+        });
+
+        $("#btn2").click(function(){            
+            $("#op").html("Welcome to <b>our</b> tutorial");
+        });
+
+        $("#btn3").click(function(){            
+            $("#fname").val("Viraj Bhatti");
+        });
+    });
+</script>
