@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <script src="jquery-3.7.1.min.js"></script>
+    <script src="jquery-color-3.7.1.min.js"></script>
+
+    <style>
+        .class1 {
+            background-color: yellow;
+            color: red;
+            padding: 20px;
+        }
+
+        .class2 {
+            text-align: center;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+    </style>
+</head>
+
+<body>
+    <button id="btn1">Add Class</button>
+    <button id="btn2">Remove Class</button>
+    <hr>
+    <div id="op">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui fuga obcaecati quis corrupti aliquid, est ipsum, quod enim incidunt delectus cupiditate atque pariatur alias suscipit cumque? Saepe eaque laboriosam quidem?
+        Iure repellendus quaerat aut veritatis et, animi commodi asperiores earum. Veniam vel et ducimus laborum consequatur in, consectetur dolorum dicta libero iusto at. Animi, ratione quos quibusdam voluptatum placeat rem.
+        Iure animi enim maiores perferendis. Dignissimos, voluptatem sed veniam, libero sint cumque ad accusamus sit neque provident cupiditate. Molestias fuga veritatis velit numquam dolore corporis fugit quasi placeat cum eligendi!</p>
+    </div>
+</body>
+
+</html>
+
+<script>
+    $(document).ready(function () {
+        $("#btn1").click(function () {
+            $("#op").addClass("class1 class2");
+        });
+
+        $("#btn2").click(function () {
+            $("#op").removeClass("class1 class2");
+        });
+    });
+</script>
