@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <script src="jquery-3.7.1.min.js"></script>
+    <script src="jquery-color-3.7.1.min.js"></script>
+
+   
+</head>
+
+<body>
+   <button id="btn1">Load Data</button>
+   <hr>
+   <div id="op">
+
+   </div>
+</body>
+
+</html>
+
+<script>
+    $(document).ready(function () {
+        $("#btn1").click(function(){
+            $("#op").load("data1.txt", function(responseText, statusText, XHR){
+                alert(responseText);
+            });
+        });
+    });
+</script>
