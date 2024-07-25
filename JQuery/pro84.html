@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <script src="jquery-3.7.1.min.js"></script>
+    <script src="jquery-color-3.7.1.min.js"></script>
+
+
+</head>
+
+<body>
+    <button id="btn1">Hide</button>
+    <hr>
+    <div id="op">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium voluptates illum, non excepturi, quae incidunt quam porro aliquid dolores hic nisi maxime praesentium? Dolores debitis odit architecto quod totam nesciunt? Sint aliquam deserunt perspiciatis quo quos nobis, consequuntur debitis, ex fuga dolores dolore assumenda obcaecati laborum ea corporis! Laborum, nam nemo! Adipisci inventore itaque alias sed accusamus esse assumenda rerum? A, praesentium, culpa at aperiam quos reprehenderit vel molestias eum iste consequatur quae, magni laboriosam ullam distinctio sed quas corrupti nam nihil mollitia atque asperiores cum eos sapiente. Ipsum, a! Blanditiis sint voluptatibus harum, magni delectus in alias, dignissimos quae dolorum veniam velit accusantium pariatur, possimus eligendi! Ipsa, nam delectus. Eaque nobis culpa praesentium tempore velit ipsam aspernatur possimus obcaecati? Optio, eum harum corporis, aut laudantium modi sequi ex mollitia non consequatur tenetur earum quisquam velit magnam animi ut saepe iste enim minus unde? Totam voluptate nam et tenetur ut!
+    </div>
+</body>
+
+</html>
+
+<script>
+    const jq = $.noConflict();
+
+    jq(document).ready(function(){
+        jq("#btn1").click(function(){
+            jq("#op").hide(5000);
+        });
+    });
+</script>
