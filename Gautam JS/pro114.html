@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+</body>
+
+</html>
+
+<script>
+
+    //object Constructor
+
+    function MyCar(carname, brand, make, fuel, seating) {
+        this.carname = carname;
+        this.brand = brand;
+        this.make = make;
+        this.fuel = fuel;
+        this.seating = seating;
+        this.country = "India";
+        this.getCarData = function () {
+            return this.carname + " " + this.brand + " " + this.fuel + " " + this.country;
+        }
+    }
+
+    let car1 = new MyCar("Innova", "Toyota", 2020, "Diesel", 8);
+    let car2 = new MyCar("Innova Crysta", "Toyota", 2022, "Petrol", 7);
+    let car3 = new MyCar("i20", "Hyundai", 2020, "Diesel", 5);
+
+    document.write("<hr>" + car1.getCarData());
+    document.write("<hr>" + car2.getCarData());
+    document.write("<hr>" + car3.getCarData());
+</script>

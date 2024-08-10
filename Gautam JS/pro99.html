@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+</body>
+
+</html>
+
+<script>
+
+    // Using the new Keywordl
+    const car = {
+        // Key : value
+        carname: "Innova",
+        brand: "Toyota",
+        make: 2020,
+        fuel: "Diesel",
+        seating: 8,  
+        getCarDetails : function(){
+            return (this.carname+" "+this.brand+" "+this.fuel).toUpperCase();
+        }
+    };
+
+
+    document.write("<hr>"+car.getCarDetails);
+    
+</script>

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+</body>
+
+</html>
+
+<script>
+
+    // Using the new Keywordl
+    const car = {
+        // Key : value
+        carname: "Innova",
+        brand: "Toyota",
+        make: 2020,
+        fuel: "Diesel",
+        seating: 8,  
+        memo : {
+            "oct23" : 5000,
+            "nov23" : 700,
+            "march24"  : 1500
+        }
+    };
+
+
+    document.write("<hr>"+car.memo.march24);
+    document.write("<hr>"+car["memo"]["nov23"]);
+</script>

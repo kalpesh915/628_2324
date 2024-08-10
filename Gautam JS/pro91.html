@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+</body>
+
+</html>
+
+<script>
+
+    // Using the new Keywordl
+    const car = {
+        // Key : value
+        carname: "Innova",
+        brand: "Toyota",
+        make: 2020,
+        fuel: "Diesel",
+        seating: 8,
+        getCarData : function(){
+            // this keyword used to get value of current object
+            return this.carname+" of "+this.brand;
+        }
+    };
+
+    document.write("<hr>"+car.getCarData());
+</script>
