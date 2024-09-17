@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+</body>
+
+</html>
+
+<script>
+    // function test(){
+    //     console.log(test.abc)
+    // }
+
+    // test();
+
+    // test.abc = 100;
+    // test.abc = 500;
+    // test.abc = 900;
+
+    // test();
+
+    // console.log({} == {});
+    // console.log({} === {});
+
+    function test(record){
+        console.log(_.isEqual(record, {age:35}));
+        if(record == { age: 35}){
+            console.log("True 1");
+        }else if(record === {age: 35}){
+            console.log("True 2");
+        }else{
+            console.log("False");
+        }
+    }
+
+    test({age:35});
+</script>
