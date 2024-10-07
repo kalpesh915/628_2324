@@ -1,0 +1,7 @@
+open terminal
+run following command npm i json-server -g
+create file named myapi.json 
+run command json-server --watch myapi.json
+click on endpoints
+
+Something is already running on port 3000.
