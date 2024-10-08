@@ -1,0 +1,20 @@
+{
+  "students": [
+    {
+      "id": "2651",
+      "fname": "Devarshi",
+      "lname": "thakar",
+      "email": "devarshi@gmail.com",
+      "phone": "9900990099",
+      "gender": "male"
+    },
+    {
+      "id": "941b",
+      "fname": "BHatti",
+      "lname": "Viraj",
+      "email": "viaj@gmail.com",
+      "phone": "9900990099",
+      "gender": "male"
+    }
+  ]
+}
