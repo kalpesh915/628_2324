@@ -34,6 +34,18 @@ function Students(){
             })
         }else{
             // code for update
+            fetch(APIURL+"/"+sid,{
+                method:"put",
+                headers:{
+                    "accept":"Application/json",
+                    "content-type":"Application/json"
+                },body: JSON.stringify({fname, lname, email, phone, gender})
+            }).then((response)=>{
+                response.json().then((result)=>{
+                    resetForm();
+                    loadData();
+                });
+            })
         }
     }
 
@@ -72,6 +84,23 @@ function Students(){
                 })
             })
         }
+    }
+
+    function getDataforUpdate(userid){
+        //alert(userid);
+        fetch(APIURL+"/"+userid,{
+            method: "GET"
+        }).then((response)=>{
+            response.json().then((result)=>{
+                setSid(result.id);
+                setFname(result.fname);
+                setLname(result.lname);
+                setEmail(result.email);
+                setPhone(result.phone);
+                setGender(result.gender);
+                setAction(false);
+            });
+        })
     }
 
     return <>
@@ -115,8 +144,8 @@ function Students(){
                                     <input type="submit" value="Add New Data" className="btn btn-primary"></input>
                                     <input type="reset" value="Reset" className="mx-2 btn btn-danger"></input>
                                 </> : <>
-                                <input type="submit" value="Update Data" className="btn btn-primary"></input>
-                                <input type="reset" value="Reset" className="mx-2 btn btn-danger" onClick={()=>{}}></input></>
+                                    <input type="submit" value="Update Data" className="btn btn-primary"></input>
+                                    <input type="reset" value="Reset" className="mx-2 btn btn-danger" onClick={()=>resetForm()}></input></>
                             }
                         </div>
                     </form>
@@ -142,7 +171,7 @@ function Students(){
                             </thead>
                             <tbody>
                                 {
-                                    userdata.map((user, index)=><tr id={index}>
+                                    userdata.map((user, index)=><tr key={index}>
                                         <td>{user.id}</td>
                                         <td>{user.fname}</td>
                                         <td>{user.lname}</td>
@@ -153,7 +182,7 @@ function Students(){
                                             <button className="btn btn-danger" onClick={()=>deleteData(user.id)}>
                                                 <i className="fa fa-trash"></i>
                                             </button>
-                                            <button className="btn btn-primary mx-2">
+                                            <button className="btn btn-primary mx-2" onClick={()=>getDataforUpdate(user.id)}>
                                                 <i className="fa fa-pen"></i>
                                             </button>
                                         </td>
