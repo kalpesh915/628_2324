@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+</html>
+
+<script>
+    let city = new Map([
+        [1, "Rajkot"],
+        [2, "Surat"],
+        [3, "Baroda"],
+        [4, "Junagadh"],
+        [5, "Ahamdabad"]
+    ]);
+
+    console.log(city.get(1));
+    console.log(typeof city);
+    console.log(city instanceof Map);
+    console.log(city.size);
+    console.log(city.has(2));
+    city.delete(2);
+    console.log(city.has(2));
+    console.log(city);
+    city.clear();
+    console.log(city);
+</script>

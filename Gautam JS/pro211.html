@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+</html>
+
+<script>
+    const fruits = [
+        {id:1, name:"Apple", stock: 20},
+        {id:2, name:"Apple", stock: 120},
+        {id:3, name:"Banana", stock: 200},
+        {id:4, name:"Orange", stock: 30},
+        {id:5, name:"Cherry", stock: 120},
+        {id:6, name:"Lichi", stock: 220},
+        {id:7, name:"Mango", stock: 220},
+        {id:8, name:"PineApple", stock: 10},
+    ]
+
+    function callBack ({stock}) {
+        return stock > 100 ? "OK" : "Low";
+    }
+
+    const result = Map.groupBy(fruits, callBack);
+
+    console.log(result);
+</script>
