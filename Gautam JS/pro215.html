@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+</html>
+
+<script>
+    let user = {
+        fname: "Arvind",
+        lname: "Godansa",
+        city: "Rajkot"
+    };
+
+    //document.write(user);
+    //let {fname, lname, city, year} = user;
+    let {fname : fn, lname : ln, city, year = 2025} = user;
+    document.write(fn+" "+ln+" "+city+" "+year);
+</script>
