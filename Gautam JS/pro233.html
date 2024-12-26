@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="text" name="age" id="age" placeholder="Enter Your Age" onkeyup="checkAge(this.value)">
+    <h1 id="op"></h1>
+    <p id="op1"></p>
+</body>
+</html>
+
+<script>
+    let op = document.getElementById("op");
+    let count = 1;
+    function checkAge(age){
+        try{
+            if(age == ""){
+                throw "Please Enter Age";
+            }else if(isNaN(age)){
+                throw "Please Enter Valid Age in Numbers";
+            }else{
+                age = Number(age);
+
+                if(age >= 18){
+                    throw "Valid Age";
+                }else{
+                    throw "Invalid Age";
+                }
+            }
+        }catch(err){
+            op.innerHTML = err;
+        }finally{
+            count++;
+            op1.innerHTML = "Count is : "+count;
+        }
+    }
+</script>
