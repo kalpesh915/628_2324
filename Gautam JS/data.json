@@ -1,0 +1,12 @@
+{
+    "id" : 1,
+    "fname" : "Arvind",
+    "lname" : "Godansa",
+    "exams" : [
+        {"examname" : "c1", "marks" : 221},
+        {"examname" : "c2", "marks" : 221},
+        {"examname" : "c3", "marks" : 221},
+        {"examname" : "c4", "marks" : 221},
+        {"examname" : "c5", "marks" : 221}
+    ]
+}
